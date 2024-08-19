@@ -1,18 +1,19 @@
 {
-  "name": "app-id-sample-js",
-  "description": "This is a sample app for AppID SPA SDK",
-  "main": "index.js",
+  "name": "WebSdkExample-Starter",
+  "version": "2.0.0",
+  "description": "App ID web application sample",
+  "main": "app.js",
+  "private": true,
   "scripts": {
-    "postinstall": "webpack && cp dist/main.js public/main.js",
-    "start": "npm run postinstall && ws --port 3005 --directory public --hostname localhost"
+    "start": "node app.js"
   },
   "dependencies": {
-    "ibmcloud-appid-js": "^0.4.3"
-  },
-  "devDependencies": {
-    "local-web-server": "^4.2.1",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12"
-  },
-  "private": true
+    "body-parser": "^1.20.2",
+    "cfenv": "^1.2.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "ibmcloud-appid": "^7.0.0",
+    "jquery.json-viewer": "^1.4.0",
+    "passport": "^0.6.0"
+  }
 }
